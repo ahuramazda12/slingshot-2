@@ -60,12 +60,13 @@
         }
 
         .nav-logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            background: var(--gradient-1);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-logo img {
+            height: 32px;
+            width: auto;
         }
 
         .nav-links {
@@ -753,12 +754,6 @@
         }
 
         .footer-logo {
-            font-size: 2rem;
-            font-weight: 700;
-            background: var(--gradient-1);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
             margin-bottom: 1rem;
         }
 
@@ -845,7 +840,7 @@
     <!-- Navigation -->
     <nav class="nav">
         <div class="nav-content">
-            <div class="nav-logo">Slingshot 2.0</div>
+            <div class="nav-logo"><img src="assets/logo.png" alt="Slingshot"></div>
             <div class="nav-links">
                 <a href="#packages" class="nav-link">Packages</a>
                 <a href="#sales" class="nav-link">Sales</a>
@@ -1695,7 +1690,7 @@ We've helped [example if available] drive [result]. Would love to chat about how
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-logo">Slingshot 2.0</div>
+        <div class="footer-logo"><img src="assets/logo.png" alt="Slingshot" style="height: 48px;"></div>
         <p class="footer-tagline">340K+ reach. Structured campaigns. Real results.</p>
         <a href="#packages" class="footer-cta">View Packages</a>
         <p style="margin-top: 3rem; color: var(--text-muted); font-size: 0.875rem;">
