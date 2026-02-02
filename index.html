@@ -1270,6 +1270,403 @@
             border-radius: 50%;
             box-shadow: 0 0 8px rgba(99, 102, 241, 0.5);
         }
+
+        /* ========================================
+           MOBILE RESPONSIVE STYLES
+           ======================================== */
+
+        /* Tablet breakpoint */
+        @media (max-width: 1024px) {
+            .container {
+                padding: 1.5rem;
+            }
+
+            .bento-grid-2 {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-stats {
+                gap: 1.5rem;
+            }
+
+            .hero-stat {
+                padding: 1rem;
+            }
+
+            .hero-stat-value {
+                font-size: 2rem;
+            }
+        }
+
+        /* Mobile breakpoint */
+        @media (max-width: 768px) {
+            /* Navigation */
+            .nav {
+                padding: 0.75rem 1rem;
+            }
+
+            .nav-content {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+
+            .nav-links {
+                justify-content: center;
+                gap: 0.25rem;
+            }
+
+            .nav-link {
+                padding: 0.4rem 0.6rem;
+                font-size: 0.75rem;
+            }
+
+            /* Hero */
+            .hero {
+                padding: 6rem 1rem 3rem;
+                min-height: auto;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .hero-badge {
+                font-size: 0.75rem;
+                padding: 0.4rem 0.8rem;
+            }
+
+            .hero-mascot {
+                max-width: 180px;
+            }
+
+            .hero-stats {
+                gap: 0.75rem;
+                margin-top: 2rem;
+            }
+
+            .hero-stat {
+                padding: 0.75rem;
+                min-width: calc(50% - 0.5rem);
+            }
+
+            .hero-stat-value {
+                font-size: 1.5rem;
+            }
+
+            .hero-stat-label {
+                font-size: 0.7rem;
+            }
+
+            .floating-coin img {
+                width: 35px;
+            }
+
+            /* Container & Sections */
+            .container {
+                padding: 1rem;
+            }
+
+            .section {
+                margin-bottom: 2.5rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .section-desc {
+                font-size: 1rem;
+            }
+
+            /* Bento Grid */
+            .bento-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .bento-grid-2,
+            .bento-grid-3 {
+                grid-template-columns: 1fr;
+            }
+
+            .bento-card {
+                padding: 1.25rem;
+            }
+
+            .bento-card.featured {
+                grid-column: span 1;
+            }
+
+            /* Cards */
+            .card-title {
+                font-size: 1.1rem;
+            }
+
+            .card-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 1.25rem;
+            }
+
+            /* Pricing */
+            .pricing-name {
+                font-size: 1.25rem;
+            }
+
+            .pricing-price {
+                font-size: 2rem;
+            }
+
+            .pricing-features li {
+                font-size: 0.875rem;
+            }
+
+            /* Metrics */
+            .metrics-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.75rem;
+            }
+
+            .metric-card {
+                padding: 1rem;
+            }
+
+            .metric-value {
+                font-size: 1.5rem;
+            }
+
+            .metric-label {
+                font-size: 0.75rem;
+            }
+
+            /* Tables */
+            .table-container {
+                margin: 0.5rem -1rem;
+                padding: 0 1rem;
+            }
+
+            table {
+                font-size: 0.8rem;
+            }
+
+            th, td {
+                padding: 0.75rem 0.5rem;
+            }
+
+            /* Process Steps */
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .process-step {
+                padding: 1.25rem;
+            }
+
+            /* Schedule Cards */
+            .schedule-card {
+                padding: 1.5rem 1rem;
+            }
+
+            .schedule-day {
+                font-size: 1.25rem;
+            }
+
+            /* Quote Block */
+            .quote-block {
+                padding: 1rem 1.25rem;
+                font-size: 1rem;
+                margin: 1rem 0;
+            }
+
+            .quote-block::before {
+                font-size: 2.5rem;
+                top: -5px;
+                left: 10px;
+            }
+
+            /* DM Templates */
+            .dm-template {
+                padding: 1rem;
+            }
+
+            .dm-template-content {
+                font-size: 0.875rem;
+                line-height: 1.6;
+            }
+
+            /* Checklist */
+            .checklist li {
+                padding: 0.6rem 0;
+                font-size: 0.9rem;
+            }
+
+            /* Projection Cards */
+            .projection-card {
+                padding: 1rem;
+            }
+
+            .projection-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.25rem;
+            }
+
+            .projection-period {
+                font-size: 0.9rem;
+            }
+
+            /* Role Cards */
+            .role-avatar {
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+
+            .role-info h4 {
+                font-size: 1rem;
+            }
+
+            .role-info p {
+                font-size: 0.85rem;
+            }
+
+            /* Report Preview */
+            .report-preview {
+                padding: 1rem;
+                font-size: 0.75rem;
+            }
+
+            /* CTA Button */
+            .cta-button {
+                padding: 0.875rem 1.5rem;
+                font-size: 1rem;
+            }
+
+            /* Footer */
+            .footer {
+                padding: 2.5rem 1rem;
+                margin-top: 2rem;
+            }
+
+            .footer-tagline {
+                font-size: 0.9rem;
+            }
+
+            /* Divider */
+            .divider {
+                margin: 2rem 0;
+            }
+
+            /* Utility spacing */
+            .mt-2 {
+                margin-top: 1.5rem;
+            }
+
+            .mb-2 {
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        /* Small mobile breakpoint */
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+
+            .hero p {
+                font-size: 0.9rem;
+            }
+
+            .hero-mascot {
+                max-width: 140px;
+            }
+
+            .hero-stats {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero-stat {
+                width: 100%;
+                max-width: 200px;
+            }
+
+            .floating-coin {
+                display: none;
+            }
+
+            .nav-links {
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: none;
+                padding-bottom: 0.25rem;
+            }
+
+            .nav-links::-webkit-scrollbar {
+                display: none;
+            }
+
+            .nav-link {
+                flex-shrink: 0;
+            }
+
+            .section-title {
+                font-size: 1.3rem;
+            }
+
+            .metrics-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .pricing-price {
+                font-size: 1.75rem;
+            }
+
+            .card-title {
+                font-size: 1rem;
+            }
+
+            th, td {
+                padding: 0.5rem 0.4rem;
+                font-size: 0.75rem;
+            }
+
+            .cta-button {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        /* Reduce motion for accessibility */
+        @media (prefers-reduced-motion: reduce) {
+            .floating-coin,
+            .hero-mascot,
+            .hero-character {
+                animation: none;
+            }
+
+            .bento-card,
+            .metric-card,
+            .pricing-card,
+            .process-step,
+            .projection-card,
+            .dm-template,
+            .schedule-card,
+            .nav-link,
+            .cta-button {
+                transition: none;
+            }
+
+            .pricing-badge {
+                animation: none;
+            }
+        }
     </style>
 </head>
 <body>
